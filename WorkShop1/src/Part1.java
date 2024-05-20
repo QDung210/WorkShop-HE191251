@@ -25,10 +25,12 @@ public class Part1 {
         int line = 0;
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m ; j++){
-                line++;
-                if(line == 4){
-                System.out.print("\n");
+                for(int k = 0; k < m; k++){
+                    if(line == k * m ){
+                    System.out.print("\n");
+                    }
                 }
+                line++;
                 System.out.format("%3d", arr[i][j]);
             }
         }
